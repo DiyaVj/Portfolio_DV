@@ -1,29 +1,22 @@
-import { NextResponse } from 'next/server';
-import { Resend } from 'resend';
+/* eslint-disable react/react-in-jsx-scope */
+import { Resend } from 'resend'
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-const fromEmail = process.env.From_EMAIL;
+const resend = new Resend(process.env.RESEND_API_KEY)
 
-export async function POST(req, res) {
-    const { body } = await req.json();
-    const { email, subject, message } = body;
-    try {
-        const data = await resend.emails.send({
-            from: fromEmail,
-            to: ['diyavijay2371@gmail.com', email],
-            subject: subject,
-            react: (
-              <>
-              <h1>{subject}</h1>
-              <p>Thank you for contancting me!</p>
-              <p>New message submitted:</p>
-              <p>{message}</p>
-              </>
-            )
-});
+export async function POST () {
+  try {
+    const data = await resend.emails.send({
+      from: 'Judy <diyavijay2371@gmail.com>',
+      to: ['diyavijay2371@gmail.com'],
+      subject: 'Hello world',
+      react: (
+      <>
+      <p>Email Body</p>
+      </>)
+    })
 
-return NextResponse.json(data);
-    } catch (error) {
-        return NextResponse.json({ status: "fail", error });
-    }
+    return Response.json(data)
+  } catch (error) {
+    return Response.json({ error })
+  }
 }
