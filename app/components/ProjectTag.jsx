@@ -2,8 +2,8 @@
 /* eslint-disable react/react-in-jsx-scope */
 const ProjectTag = ({ name, onClick, isSelected }) => {
   const buttonStyles = isSelected
-    ? 'text-white border border-purple-500'
-    : 'text-[#ADB7BE]'
+    ? "text-white border border-purple-500"
+    : "text-[#ADB7BE]";
   return (
     <button
       className={`${buttonStyles} rounded-full px-6 py-2 text-1xl cursor-pointer`}
@@ -11,7 +11,7 @@ const ProjectTag = ({ name, onClick, isSelected }) => {
     >
       {name}
     </button>
-  )
-}
+  );
+};
 
-export default ProjectTag
+export default ProjectTag;

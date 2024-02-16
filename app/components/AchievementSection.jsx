@@ -1,31 +1,31 @@
-'use client'
-import React from 'react'
-import dynamic from 'next/dynamic'
+"use client";
+import React from "react";
+import dynamic from "next/dynamic";
 
 const AnimatedNumbers = dynamic(
   () => {
-    return import('react-animated-numbers')
+    return import("react-animated-numbers");
   },
   { ssr: false }
-)
+);
 
 const achievementsList = [
   {
-    metric: 'Views on my recent article',
-    value: '1',
-    postfix: '.7K+'
+    metric: "Views on my recent article",
+    value: "1",
+    postfix: ".7K+",
   },
   {
-    prefix: 'Top',
+    prefix: "Top",
     metric: "Contributor at GWOC'21",
-    value: '10'
+    value: "10",
   },
   {
-    prefix: 'Top',
-    metric: 'At Samsung Solve For Tomorrow',
-    value: '50'
-  }
-]
+    prefix: "Top",
+    metric: "At Samsung Solve For Tomorrow",
+    value: "50",
+  },
+];
 
 const AchievementSection = () => {
   return (
@@ -48,8 +48,8 @@ const AchievementSection = () => {
                     return {
                       mass: 1,
                       friction: 100,
-                      tension: 140 * (index + 1)
-                    }
+                      tension: 140 * (index + 1),
+                    };
                   }}
                 />
                 {achievements.postfix}
@@ -59,11 +59,11 @@ const AchievementSection = () => {
                 {achievements.metric}
               </p>
             </div>
-          )
+          );
         })}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default AchievementSection
+export default AchievementSection;

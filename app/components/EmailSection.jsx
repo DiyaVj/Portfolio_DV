@@ -1,46 +1,46 @@
 /* eslint-disable react/no-unescaped-entities */
-'use client'
-import React, { useState } from 'react'
-import Link from 'next/link'
-import Image from 'next/image'
-import GitHubIcon from '../../public/images/github.png'
-import LinkedInIcon from '../../public/images/linkedin.png'
-import DiscordIcon from '../../public/images/discord.png'
-import XIcon from '../../public/images/X.png'
+"use client";
+import React, { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import GitHubIcon from "../../public/images/github.png";
+import LinkedInIcon from "../../public/images/linkedin.png";
+import DiscordIcon from "../../public/images/discord.png";
+import XIcon from "../../public/images/X.png";
 
 const EmailSection = () => {
-  const [emailSumitted, setEmailSubmitted] = useState(false)
+  const [emailSumitted, setEmailSubmitted] = useState(false);
 
   const handleSubmit = async (e) => {
-    e.preventDefault()
+    e.preventDefault();
     const data = {
       email: e.target.email.value,
       subject: e.target.subject.value,
-      message: e.target.message.value
-    }
-    const JSONdata = JSON.stringify(data)
-    const endpoint = '/api/send/'
+      message: e.target.message.value,
+    };
+    const JSONdata = JSON.stringify(data);
+    const endpoint = "/api/send";
 
     // forming the request for sending data to the server
     const options = {
-      method: 'POST',
+      method: "POST",
 
       headers: {
-        'Content-Type': 'application/json'
+        "Content-Type": "application/json",
       },
 
-      body: JSONdata
-    }
+      body: JSONdata,
+    };
 
-    const response = await fetch(endpoint, options)
-    const resData = await response.json()
-    console.log(resData)
+    const response = await fetch(endpoint, options);
+    const resData = await response.json();
+    console.log(resData);
 
     if (response.status === 200) {
-      console.log('Message sent.')
-      setEmailSubmitted(true)
+      console.log("Message sent.");
+      setEmailSubmitted(true);
     }
-  }
+  };
 
   return (
     <section
@@ -51,7 +51,7 @@ const EmailSection = () => {
       <div className="z-1">
         <h5 className="text-xl font-bold text-white my-2">Let's Connect</h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
-          {' '}
+          {" "}
           Whether it's about the latest tech trends, UI/UX design, or just a
           friendly conversation, feel free to reach out!
         </p>
@@ -132,7 +132,7 @@ const EmailSection = () => {
         </form>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default EmailSection
+export default EmailSection;

@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
-import React from 'react'
-import NavLink from './NavLink'
+import React from "react";
+import NavLink from "./NavLink";
 
 const MenuOverlay = ({ links }) => {
   return (
@@ -11,7 +11,7 @@ const MenuOverlay = ({ links }) => {
         </li>
       ))}
     </ul>
-  )
-}
+  );
+};
 
-export default MenuOverlay
+export default MenuOverlay;

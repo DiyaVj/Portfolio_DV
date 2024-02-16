@@ -7,7 +7,7 @@ const Footer = () => {
         <p className="text-slate-500"> Made with 💜 by DV</p>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
