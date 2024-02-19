@@ -1,11 +1,11 @@
 /* eslint-disable react/react-in-jsx-scope */
 import AboutSection from "./components/AboutSection";
+import AchievementSection from "./components/AchievementSection";
+import EmailSection from "./components/EmailSection";
+import Footer from "./components/Footer";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import ProjectsSection from "./components/ProjectsSection";
-import EmailSection from "./components/EmailSection";
-import Footer from "./components/Footer";
-import AchievementSection from "./components/AchievementSection";
 
 export default function Home() {
   return (

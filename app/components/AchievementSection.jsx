@@ -12,8 +12,8 @@ const AnimatedNumbers = dynamic(
 const achievementsList = [
   {
     metric: "Views on my recent article",
-    value: "1",
-    postfix: ".7K+",
+    value: "2",
+    postfix: "K+",
   },
   {
     prefix: "Top",

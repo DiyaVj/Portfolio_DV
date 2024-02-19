@@ -1,15 +1,11 @@
-/* eslint-disable react/no-unescaped-entities */
-/* eslint-disable react/react-in-jsx-scope */
 "use client";
-import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
+import { TypeAnimation } from "react-type-animation";
 
 const HeroSection = () => {
   return (
-    <section className="lg:py-16 py-40">
-      <div className="grid grid-cols-1">
-        {/* <div className="before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-purple-700 before:dark:opacity-10 after:dark:from-purple-900 after:dark:via-[#ea01ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-      </div> */}
+    <section className="py-28">
+    <div className="grid grid-cols-1">
         <motion.div
           initial={{ opacity: 0, scale: 0.2 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -42,7 +38,7 @@ const HeroSection = () => {
             Welcome To My Portfolio!
           </p>
           <div>
-            <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-6 bg-gradient-to-r from-purple-400 to-purple-700 hover:bg-gradient-to-r hover:from-slate-800 hover:to-slate-700 text-white hover:text-purple-500">
+            <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-6 bg-gradient-to-r from-purple-400 to-purple-700 hover:bg-gradient-to-r hover:from-slate-800 hover:to-slate-700 text-white hover:text-purple-500 ">
               <a
                 href="https://bento.me/diya-vj"
                 target="_blank"

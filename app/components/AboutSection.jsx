@@ -2,14 +2,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/react-in-jsx-scope */
 "use client";
-import {
-  BuildingOfficeIcon,
-  CodeBracketIcon,
-  PaintBrushIcon,
-  PaperAirplaneIcon,
-  PaperClipIcon,
-  PuzzlePieceIcon,
-} from "@heroicons/react/24/solid";
 import { useState, useTransition } from "react";
 import TabButtons from "./TabButtons";
 
@@ -77,7 +69,7 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="py-20 text-white" id="about">
+    <section className="text-white" id="about">
       <div className="md:flex md:items-center px-4 xl:gap-16 sm:py-6 xl:px-6">
         <div className="md:w-1/2">
           <h2 className="text-4xl font-bold mb-4">A Little About Me...</h2>
