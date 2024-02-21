@@ -2,9 +2,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import XIcon from "../../public/images/X.png";
-import DiscordIcon from "../../public/images/discord.png";
 import GitHubIcon from "../../public/images/github.png";
 import LinkedInIcon from "../../public/images/linkedin.png";
+import GmailIcon from "../../public/images/gmail.svg";
 
 const EmailSection = () => {
   return (
@@ -24,11 +24,11 @@ const EmailSection = () => {
           <Link href="https://www.linkedin.com/in/diya-vijay/">
             <Image src={LinkedInIcon} className="w-10 h-10 hover:opacity-80 cursor-pointer" alt="LinkedIn Icon" />
           </Link>
-          <Link href="https://linktr.ee/Diyavj">
-            <Image src={DiscordIcon} className="w-10 h-10 hover:opacity-80 cursor-pointer" alt="Discord Icon" />
-          </Link>
           <Link href="https://twitter.com/DiyaVijay6">
             <Image src={XIcon} className="w-10 h-10 hover:opacity-80 cursor-pointer" alt="X Icon" />
+          </Link>
+          <Link href="mailto:diyavijay2371@gmail.com">
+            <Image src={GmailIcon} className="w-10 h-10 hover:opacity-80 cursor-pointer" alt="X Icon" />
           </Link>
         </div>
       </div>
