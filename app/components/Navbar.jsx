@@ -7,7 +7,7 @@ import NavLink from "./NavLink";
 
 const navLinks = [
   {
-    title: "Home",
+    title: "Galaxy",
     path: "/",
   },
   {

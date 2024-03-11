@@ -41,19 +41,19 @@ const projectsData = [
     gitUrl: "https://github.com/DiyaVj/Cinemilar",
     previewUrl: "https://diyavj-cinemilar-app-kh30et.streamlit.app/",
   },
-  // {
-  //   id: 3,
-  //   title: "Menses - Period Poverty Tracker",
-  //   description:
-  //     "A web-based application, Menses serves as a tracker to help people in need locate donors nearby and connect with them.",
-  //   image:
-  //     "https://th.bing.com/th/id/OIP.ty8z-tueGxpiTEZcjr6b9QHaFj?rs=1&pid=ImgDetMain",
-  //   tag: ["All", "Web"],
-  //   gitUrl: "https://github.com/DiyaVj/Menses-Period-Poverty-Tracker",
-  //   previewUrl: "https://diyavj.github.io/Menses-Period-Poverty-Tracker/",
-  // },
   {
     id: 3,
+    title: "Menses - Period Poverty Tracker",
+    description:
+      "A web-based application, Menses serves as a tracker to help people in need locate donors nearby and connect with them.",
+    image:
+      "https://i.ytimg.com/vi/IruiERruBhI/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGBEgZShyMA8=&rs=AOn4CLB_p1hEThhtGDDbh-on4O-hJqzfpw",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/DiyaVj/Menses-Period-Poverty-Tracker",
+    previewUrl: "https://diyavj.github.io/Menses-Period-Poverty-Tracker/",
+  },
+  {
+    id: 4,
     title: "Solar System WebVR",
     description:
       "Experience the immersive virtual reality of our solar system in your web browser with Solar System WebVR, using AFrame technology for an unparalleled journey.",
@@ -98,8 +98,9 @@ const ProjectsSection = () => {
   return (
     <section id="projects">
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
-        Check Out My Projects!
+      Journey Through My Cosmic Projects
       </h2>
+      <p className="text-center text-1xl text-[#ADB7BE]"> Explore more projects on my <a href="https://github.com/DiyaVj">GitHub</a></p>
       <div className="text-white flex flex-row justify-center item-center gap-2 py-6">
         <ProjectTag
           onClick={() => handleTagChange("All")}

@@ -13,9 +13,9 @@ const EmailSection = () => {
         {/* <div className="bg-gradient-to-r from-purple-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-1/4 -left-4  transform -translate-x-1/2 -translate-1/2"></div>
       <div className="bg-gradient-to-r from-transparent to-purple-900 rounded-full h-80 w-80 z-0 blur-lg absolute top-1/4 left-  transform -translate-x-1/2 -translate-1/2"></div>
            */}
-          <h2 className="text-3xl font-bold text-white mb-4">Let's Connect</h2>
+          <h2 className="text-3xl font-bold text-white mb-4"> Reach Out Across the Cosmos</h2>
         <p className="text-gray-400 mb-6 max-w-md">
-          Whether it's about the latest tech trends, UI/UX design, or just a friendly conversation, feel free to reach out!
+        Whether it's tech stuff, design things, or just a friendly chat, feel free to drop a message!
         </p>
         <div className="socials flex flex-row gap-4 items-center justify-center">
           <Link href="https://github.com/DiyaVj">

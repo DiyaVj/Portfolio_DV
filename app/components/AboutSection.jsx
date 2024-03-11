@@ -74,11 +74,9 @@ const AboutSection = () => {
         <div className="md:w-1/2">
           <h2 className="text-4xl font-bold mb-4">A Little About Me...</h2>
           <p className="text-base lg:text-lg text-justify">
-            I thrive on challenging projects, using my problem-solving skills
-            and creativity. Eager to learn and collaborate, I'm on a mission to
-            build scalable software solutions that genuinely impact lives. I
-            bring a keen eye for UI/UX design, crafting experiences that are not
-            just functional but delightful.
+            I'm not just a coder; I'm a creator, a problem-solver, and a forever learner. I find joy in turning challenges into opportunities.
+            My journey in the tech world revolves around building meaningful connections and using technology as a force for positive change.
+            Besides the coding gig,  I'm also pretty good at making things look nice - UI/UX design is my thing. I'm all about creating experiences that not only useful but also put a smile on your face. 
           </p>
         </div>
         <div className="md:w-1/2">
