@@ -1,4 +1,5 @@
-/* eslint-disable react/react-in-jsx-scope */
+"use client";
+import React, { useState } from "react";
 import AboutSection from "./components/AboutSection";
 import AchievementSection from "./components/AchievementSection";
 import EmailSection from "./components/EmailSection";
@@ -9,12 +10,20 @@ import ProjectsSection from "./components/ProjectsSection";
 import StarsCanvas from "./components/StarsCanvas";
 
 export default function Home() {
+  const [isAnimationPaused, setIsAnimationPaused] = useState(false);
+
+  const toggleAnimation = () => {
+    setIsAnimationPaused(!isAnimationPaused);
+  };
   return (
     <main className="flex min-h-screen flex-col bg-[#000000]">
-      <StarsCanvas/>
+         <StarsCanvas isPaused={isAnimationPaused} />
       <Navbar />
       <div className="z-20 container mt-24 mx-auto px-12 py-4">
-        <HeroSection />
+      <HeroSection
+          toggleAnimation={toggleAnimation}
+          isAnimationPaused={isAnimationPaused}
+        />
         <AboutSection />
         <AchievementSection />
         <ProjectsSection />

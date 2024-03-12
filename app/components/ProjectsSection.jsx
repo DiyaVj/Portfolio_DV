@@ -19,19 +19,19 @@ const projectsData = [
     gitUrl: "https://github.com/DiyaVj/preg-edu",
     previewUrl: "https://preg-edu.vercel.app/",
   },
-  // {
-  //   id: 2,
-  //   title: "XSentix",
-  //   description:
-  //     "XSentix is a sentiment analyzer tool for analyzing sentiments of tweets/posts on the X (Formarly Tweeter) platform.",
-  //   image:
-  //     "https://storage.googleapis.com/s4a-prod-share-preview/default/st_app_screenshot_image/082c77d6-fdd6-42a3-b520-0a96e6629607/Raw_App_Screenshot.png",
-  //   tag: ["All", "ML"],
-  //   gitUrl: "https://github.com/DiyaVj/XSentix",
-  //   previewUrl: "https://xsentix.streamlit.app/",
-  // },
   {
     id: 2,
+    title: "XSentix",
+    description:
+      "XSentix is a sentiment analyzer tool for analyzing sentiments of tweets/posts on the X (Formarly Twitter) platform.",
+    image:
+      "https://github.com/DiyaVj/Portfolio_DV/assets/87236107/3b64300d-ee89-4c8a-b86c-372b36fec13e",
+    tag: ["All", "ML"],
+    gitUrl: "https://github.com/DiyaVj/XSentix",
+    previewUrl: "https://xsentix.streamlit.app/",
+  },
+  {
+    id: 3,
     title: "Cinemilar",
     description:
       "Cinemilar introduces a movie recommendation app using content-based filtering, suggesting the top 5 similar films based on metadata analysis.",
@@ -42,18 +42,18 @@ const projectsData = [
     previewUrl: "https://diyavj-cinemilar-app-kh30et.streamlit.app/",
   },
   {
-    id: 3,
+    id: 4,
     title: "Menses - Period Poverty Tracker",
     description:
       "A web-based application, Menses serves as a tracker to help people in need locate donors nearby and connect with them.",
     image:
-      "https://i.ytimg.com/vi/IruiERruBhI/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGBEgZShyMA8=&rs=AOn4CLB_p1hEThhtGDDbh-on4O-hJqzfpw",
+      "https://github.com/DiyaVj/Portfolio_DV/assets/87236107/73bce21c-22dd-4d0b-8d8c-4d65db82c4c0",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/DiyaVj/Menses-Period-Poverty-Tracker",
     previewUrl: "https://diyavj.github.io/Menses-Period-Poverty-Tracker/",
   },
   {
-    id: 4,
+    id: 5,
     title: "Solar System WebVR",
     description:
       "Experience the immersive virtual reality of our solar system in your web browser with Solar System WebVR, using AFrame technology for an unparalleled journey.",
